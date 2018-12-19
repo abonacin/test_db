@@ -100,7 +100,7 @@ BEGIN
     SET new.dat_modif = CURTIME();
 END $$
 
-DELIMITER;
+DELIMITER ;
 
 
 -- Dept Manager
@@ -134,7 +134,7 @@ BEGIN
     SET new.dat_modif = CURTIME();
 END $$
 
-DELIMITER;
+DELIMITER ;
 
 
 -- Dept Emp
@@ -168,9 +168,7 @@ BEGIN
     SET new.dat_modif = CURTIME();
 END $$
 
-DELIMITER;
-
-
+DELIMITER ;
 
 
 CREATE TABLE titles (
@@ -204,7 +202,7 @@ BEGIN
 END $$
 
 
-DELIMITER;
+DELIMITER ;
 
 CREATE TABLE salaries (
     emp_no      INT             NOT NULL,
@@ -235,7 +233,7 @@ BEGIN
     SET new.dat_modif = CURTIME();
 END $$
 
-DELIMITER;
+DELIMITER ;
 
 
 CREATE OR REPLACE VIEW dept_emp_latest_date AS
